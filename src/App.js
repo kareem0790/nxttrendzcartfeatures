@@ -86,8 +86,11 @@ class App extends Component {
       <CartContext.Provider
         value={{
           cartList,
+          removeAllCartItems: this.removeAllCartItems,
           addCartItem: this.addCartItem,
+          incrementCartItemQuantity: this.incrementCartItemQuantity,
           removeCartItem: this.removeCartItem,
+          decrementCartItemQuantity: this.decrementCartItemQuantity
         }}
       >
         <Switch>
